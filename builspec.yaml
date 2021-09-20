@@ -1,0 +1,8 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - zip templates.zip *.yaml
+      - cp templates.zip .
+artifacts:
+  files: 'templates.zip'
